@@ -46,5 +46,44 @@ li{margin:.4em 0;font-size:.92em}
 <h2>Frequently Asked Questions</h2><div class="faq-section"><div class="faq-item"><h3>What weight range do the Bowflex SelectTech 552 dumbbells come in?</h3><p>Each dumbbell in the pair adjusts from 5 pounds to 52.5 pounds, offering 15 different weight settings. This range makes them suitable for beginners through advanced lifters.</p></div><div class="faq-item"><h3>How quickly can you change the weight on these dumbbells?</h3><p>The dial selector system allows you to change weights in seconds by simply rotating the dial and lifting. This makes them perfect for supersets and circuit training where you need quick transitions.</p></div><div class="faq-item"><h3>Are these dumbbells suitable for apartment living?</h3><p>Yes, the SelectTech 552 pair is ideal for apartments and small spaces. Instead of storing 30+ traditional dumbbells, you only need space for one compact pair plus their stand.</p></div><div class="faq-item"><h3>Do I need a stand for the Bowflex SelectTech 552?</h3><p>While a stand isn't required, Bowflex offers an optional stand that keeps your dumbbells organized and easily accessible. Many users find it enhances their workout setup.</p></div><div class="faq-item"><h3>What exercises can you perform with these adjustable dumbbells?</h3><p>You can perform virtually any dumbbell exercise including bicep curls, shoulder presses, chest presses, rows, lunges, deadlifts, and hundreds of other strength training movements.</p></div></div>
 <p class="disclosure">As an Amazon Associate we earn from qualifying purchases at no extra cost to you.</p>
 <a class="back" href="https://bestfitnesspicksdaily.com/">&larr; Back to Best Fitness Picks Daily</a>
+<!-- benson-email-capture -->
+<div id="benson-popup" style="display:none;position:fixed;bottom:24px;right:24px;z-index:99999;
+  background:#fff;border-radius:18px;padding:24px;max-width:310px;width:92%;
+  box-shadow:0 12px 48px rgba(0,0,0,.2);border:1px solid #f0f0f0;font-family:system-ui,sans-serif">
+  <button onclick="bensonClose()"
+    style="position:absolute;top:12px;right:16px;background:none;border:none;font-size:1.3em;cursor:pointer;color:#ccc;line-height:1">&times;</button>
+  <h3 style="margin:0 0 6px;font-size:1em;color:#111;line-height:1.3">Build Your Home Gym for Less</h3>
+  <p style="margin:0 0 14px;font-size:.83em;color:#666">The best fitness gear deals, reviewed weekly.</p>
+  <form action="https://github.us22.list-manage.com/subscribe/post?u=265f3a9f135d549492bf9a270&id=b20f19d114" method="post" target="_blank"
+    style="margin:0" onsubmit="bensonOnSubmit()">
+    <input type="hidden" name="MMERGE1" value="fitness">
+    <input type="hidden" name="b_265f3a9f135d549492bf9a270_b20f19d114" value="">
+    <input type="email" name="EMAIL" placeholder="your@email.com" required
+      style="width:100%;box-sizing:border-box;padding:11px 14px;border:1.5px solid #e0e0e0;
+      border-radius:10px;font-size:.9em;margin-bottom:8px;outline:none">
+    <button type="submit"
+      style="width:100%;background:#e76f51;color:#fff;border:none;padding:12px;
+      border-radius:10px;font-weight:700;cursor:pointer;font-size:.95em">Get Free Picks &rarr;</button>
+  </form>
+  <p style="margin:10px 0 0;font-size:.7em;color:#ccc;text-align:center">No spam. Unsubscribe anytime.</p>
+</div>
+<script>
+(function(){
+  function bensonClose(){
+    document.getElementById('benson-popup').style.display='none';
+    sessionStorage.setItem('bpop','1');
+  }
+  window.bensonClose = bensonClose;
+  window.bensonOnSubmit = function(){
+    localStorage.setItem('bsub','1');
+    setTimeout(bensonClose, 500);
+  };
+  if (!localStorage.getItem('bsub') && !sessionStorage.getItem('bpop')) {
+    setTimeout(function(){
+      document.getElementById('benson-popup').style.display='block';
+    }, 20000);
+  }
+})();
+</script>
 </body>
 </html>
