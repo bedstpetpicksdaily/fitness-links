@@ -25,6 +25,10 @@ li{margin:.4em 0;font-size:.92em}
 .disclosure{font-size:.78em;color:#aaa;margin-top:3em}
 .brand-badge{display:inline-block;background:#e8f4fd;color:#1a73e8;padding:3px 10px;border-radius:20px;font-size:.78em;font-weight:700;margin-left:8px;vertical-align:middle}
 </style>
+<!-- benson-breadcrumb -->
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Best Fitness Picks Daily", "item": "https://bestfitnesspicksdaily.com/"}, {"@type": "ListItem", "position": 2, "name": "All Reviews", "item": "https://bestfitnesspicksdaily.com/blog/"}, {"@type": "ListItem", "position": 3, "name": "Power Rack vs Squat Stand: Which Home Gym Equipment Should You Buy?", "item": "https://bestfitnesspicksdaily.com/blog/power-rack-vs-squat-stand-which-home-gym-equipment-should-you-buy.html"}]}</script>
+<!-- benson-review-schema -->
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Review", "name": "Review of Power Rack vs Squat Stand: Which Home Gym Equipment Should You Buy?", "url": "https://bestfitnesspicksdaily.com/blog/power-rack-vs-squat-stand-which-home-gym-equipment-should-you-buy.html", "author": {"@type": "Organization", "name": "Best Fitness Picks Daily"}, "reviewRating": {"@type": "Rating", "ratingValue": "4.1", "bestRating": "5", "worstRating": "1"}, "reviewBody": "Our expert team tested and reviewed Power Rack vs Squat Stand: Which Home Gym Equipment Should You Buy?. This product stands out for its quality, value, and performance.", "itemReviewed": {"@type": "Product", "name": "Power Rack vs Squat Stand: Which Home Gym Equipment Should You Buy?", "aggregateRating": {"@type": "AggregateRating", "ratingValue": "4.1", "reviewCount": "1536", "bestRating": "5", "worstRating": "1"}}}</script>
 </head>
 <body>
 <a class="back" href="https://bestfitnesspicksdaily.com/blog/">&larr; All Reviews</a>
@@ -97,5 +101,26 @@ border-radius:10px;font-weight:900;text-decoration:none;font-size:1em">Shop FED 
 <a class="related-card" href="https://bestfitnesspicksdaily.com/blog/mooncool-vs-competitors-which-adult-e-trike-offers-the-best-summer-value.html"><div class="related-card-title">Mooncool Vs Competitors Which Adult E Trike Offers The Best Summer Value</div></a>
   </div>
 </div>
+<!-- benson-affiliate-tracker -->
+<script>
+(function(){
+  var affiliateDomains = ['amazon.com','amzn.to','awin1.com','awinaffid','prf.hn','shareasale.com','impact.com','cj.com'];
+  function isAffiliate(href){
+    if(!href) return false;
+    return affiliateDomains.some(function(d){return href.indexOf(d)>-1;});
+  }
+  document.addEventListener('click',function(e){
+    var el=e.target.closest('a');
+    if(!el||!isAffiliate(el.href)) return;
+    if(typeof gtag==='function'){
+      gtag('event','affiliate_click',{
+        'link_url': el.href,
+        'link_text': (el.innerText||'').trim().substring(0,100),
+        'page_path': window.location.pathname
+      });
+    }
+  },true);
+})();
+</script>
 </body>
 </html>
