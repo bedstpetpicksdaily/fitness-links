@@ -193,5 +193,26 @@ border-radius:10px;font-weight:900;text-decoration:none;font-size:1em">Shop Moon
   <a class="share-btn share-pt" href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fbestfitnesspicksdaily.com%2Fblog%2Ftop-5-mooncool-electric-tricycles-for-hot-weather-riding-this-summer.html&description=Top%205%20Mooncool%20Electric%20Tricycles%20for%20Hot%20Weather%20Riding%20This%20Summer" target="_blank" rel="noopener">Pinterest</a>
   <a class="share-btn share-rd" href="https://reddit.com/submit?url=https%3A%2F%2Fbestfitnesspicksdaily.com%2Fblog%2Ftop-5-mooncool-electric-tricycles-for-hot-weather-riding-this-summer.html&title=Top%205%20Mooncool%20Electric%20Tricycles%20for%20Hot%20Weather%20Riding%20This%20Summer" target="_blank" rel="noopener">Reddit</a>
 </div>
+<!-- benson-affiliate-tracker -->
+<script>
+(function(){
+  var affiliateDomains = ['amazon.com','amzn.to','awin1.com','awinaffid','prf.hn','shareasale.com','impact.com','cj.com'];
+  function isAffiliate(href){
+    if(!href) return false;
+    return affiliateDomains.some(function(d){return href.indexOf(d)>-1;});
+  }
+  document.addEventListener('click',function(e){
+    var el=e.target.closest('a');
+    if(!el||!isAffiliate(el.href)) return;
+    if(typeof gtag==='function'){
+      gtag('event','affiliate_click',{
+        'link_url': el.href,
+        'link_text': (el.innerText||'').trim().substring(0,100),
+        'page_path': window.location.pathname
+      });
+    }
+  },true);
+})();
+</script>
 </body>
 </html>
