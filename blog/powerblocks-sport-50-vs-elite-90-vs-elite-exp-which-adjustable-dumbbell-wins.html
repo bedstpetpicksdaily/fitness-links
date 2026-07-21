@@ -189,5 +189,26 @@ li{margin:.4em 0;font-size:.92em}
   <a class="share-btn share-pt" href="https://pinterest.com/pin/create/button/?url=https%3A%2F%2Fbestfitnesspicksdaily.com%2Fblog%2Fpowerblocks-sport-50-vs-elite-90-vs-elite-exp-which-adjustable-dumbbell-wins.html&description=PowerBlocks%20Sport%2050%20vs%20Elite%2090%20vs%20Elite%20EXP:%20Which%20Adjustable%20Dumbbell%20Wins?" target="_blank" rel="noopener">Pinterest</a>
   <a class="share-btn share-rd" href="https://reddit.com/submit?url=https%3A%2F%2Fbestfitnesspicksdaily.com%2Fblog%2Fpowerblocks-sport-50-vs-elite-90-vs-elite-exp-which-adjustable-dumbbell-wins.html&title=PowerBlocks%20Sport%2050%20vs%20Elite%2090%20vs%20Elite%20EXP:%20Which%20Adjustable%20Dumbbell%20Wins?" target="_blank" rel="noopener">Reddit</a>
 </div>
+<!-- benson-affiliate-tracker -->
+<script>
+(function(){
+  var affiliateDomains = ['amazon.com','amzn.to','awin1.com','awinaffid','prf.hn','shareasale.com','impact.com','cj.com'];
+  function isAffiliate(href){
+    if(!href) return false;
+    return affiliateDomains.some(function(d){return href.indexOf(d)>-1;});
+  }
+  document.addEventListener('click',function(e){
+    var el=e.target.closest('a');
+    if(!el||!isAffiliate(el.href)) return;
+    if(typeof gtag==='function'){
+      gtag('event','affiliate_click',{
+        'link_url': el.href,
+        'link_text': (el.innerText||'').trim().substring(0,100),
+        'page_path': window.location.pathname
+      });
+    }
+  },true);
+})();
+</script>
 </body>
 </html>
